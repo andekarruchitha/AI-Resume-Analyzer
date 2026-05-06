@@ -1,0 +1,5 @@
+flask
+spacy
+pdfplumber
+scikit-learn
+gunicorn
