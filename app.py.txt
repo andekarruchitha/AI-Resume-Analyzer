@@ -1,8 +1,6 @@
-from flask import Flask
+import spacy
 
-app = Flask(__name__)
-
-# your other code here
-
-if __name__ == "__main__":
-    app.run()
+try:
+    nlp = spacy.load("en_core_web_sm")
+except:
+    nlp = spacy.blank("en")
